@@ -12,7 +12,7 @@ const box =
   "w-full rounded-2xl border border-white/15 bg-white/[0.06] text-paper-50 outline-none transition duration-300 " +
   "hover:border-white/30 focus:border-lime-300/70 focus:bg-white/10 focus:shadow-[0_0_0_4px_rgba(182,227,107,0.12)]";
 
-function Field({ name, label, type = "text", autoComplete, required }: { name: string; label: string; type?: string; autoComplete?: string; required?: boolean }) {
+export function Field({ name, label, type = "text", autoComplete, required }: { name: string; label: string; type?: string; autoComplete?: string; required?: boolean }) {
   return (
     <div className="relative">
       <input id={name} name={name} type={type} autoComplete={autoComplete} required={required} placeholder=" " className={`${box} peer h-16 px-5 pt-5 text-base`} />

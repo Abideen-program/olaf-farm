@@ -12,6 +12,7 @@ export type Breed = {
   availability: string;
   traits: string[];
   about: string;
+  photos?: string[]; // image addresses, the first is the main photo
 };
 
 export const BREEDS: Breed[] = [
